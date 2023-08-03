@@ -1,0 +1,22 @@
+@admin.display(description='Дата обновления')
+    def update_at(self):
+        from django.utils import timezone
+        if self.date_now.date() == timezone.now().date():
+            created_time = self.date_now.time().strftime( % H: % M: %S)
+            return format_html(
+                '<span style = ''color:red''; font = weight: bold;'">Сегодня в {}</span>'", created_time
+            )
+
+            return self.date_now.strftime("%d.%m.%y в %H:%M:%S")
+
+
+
+
+
+
+
+
+
+class AppAdvertisementsConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'Объявления'
