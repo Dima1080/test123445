@@ -1,0 +1,16 @@
+@admin.display(description='Картинка')
+    def update_at(self):
+            return format_html(
+                '<img scr = 'C:\Users\79210\Downloads\adv (1).png', self img
+            )
+
+            < ?php
+            $args = array('attachment',
+                          'orderby' = > 'menu_order', 'order' = > 'ASC', 'numberposts' = > 3, 'post_status' = > null, 'post_parent' = > $post->ID );
+            $attachments = get_posts($args);
+            $get_children_array = get_children($args, ARRAY_A);
+            $rekeyed_array = array_values($get_children_array);
+            $child_image = $rekeyed_array[0];
+            $img_url = $child_image['guid'];
+            $img_url = $child_image['guid'];
+            < img class ="alignleft" src="C:\Users\79210\Downloads\adv (1).png" alt="" height="165" / >
