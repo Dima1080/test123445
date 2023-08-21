@@ -1,0 +1,11 @@
+class Advertisements(models.Model):
+    title = models.CharField(max_length=120, choices=TITLE_CHOICES)
+    descriptions = models.CharField(blank=True, null=True)
+    price = forms.DecimalField(blank=True, null=True)
+    trades = forms.BooleanField(blank=True, null=True)
+    image = forms.ImageField(blank=True, null=True)
+
+
+
+
+ ValidationError(_('Invalid value'), code='?')
